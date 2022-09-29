@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OBgzH1Y/GLM1H3XflyNEyTDvXq4iCjoOpRGQFcybyww=",
+  "Hash": "W50OzrOGLV/IVPR+NbeKPZ60aoYi2KCyyF8S9awsHN0=",
   "Source": "CompanyApp",
   "BasePath": "_content/CompanyApp",
   "Mode": "Default",
@@ -85,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\nabil\\source\\repos\\CompanyApp\\CompanyApp\\wwwroot\\Images\\39541b45-1b9a-452f-a1ca-50e02b15815e.jpg",
+      "Identity": "C:\\Users\\nabil\\source\\repos\\CompanyApp\\CompanyApp\\wwwroot\\Images\\37b3fba2-0b21-40f4-b124-003bcdcfd91d.png",
       "SourceId": "CompanyApp",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\nabil\\source\\repos\\CompanyApp\\CompanyApp\\wwwroot\\",
       "BasePath": "_content/CompanyApp",
-      "RelativePath": "Images/39541b45-1b9a-452f-a1ca-50e02b15815e.jpg",
+      "RelativePath": "Images/37b3fba2-0b21-40f4-b124-003bcdcfd91d.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,7 +99,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\39541b45-1b9a-452f-a1ca-50e02b15815e.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\37b3fba2-0b21-40f4-b124-003bcdcfd91d.png"
     },
     {
       "Identity": "C:\\Users\\nabil\\source\\repos\\CompanyApp\\CompanyApp\\wwwroot\\Images\\8c0622eb-1fc7-4ce3-9ea6-7a5c3df9076b.png",

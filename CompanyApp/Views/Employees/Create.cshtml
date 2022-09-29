@@ -33,13 +33,12 @@
                     <div class="form-group">
                         <label class="control-label"></label>
                         <input type="file" name="ImageFile" class="form-control" />
-                        <img src="Images/@Model.EmployeeImageUrl" class="rounded-circle" style="width:32px">
+
                     </div>
-                    <div class="form-group">
-                         <label asp-for="EmployeeImageUrl" class="control-label"></label>
-                         <input type="hidden" asp-for="EmployeeImageUrl" class="form-control" />
-                         <span asp-validation-for="EmployeeImageUrl" class="text-danger"></span>
-                    </div>
+                    <img src="~/Images/@Model.EmployeeImageUrl" class="rounded" style="width:120px">
+
+                    <input type="hidden" asp-for="EmployeeImageUrl" class="form-control" />
+
                 }else{
                     <div class="form-group">
                         <label asp-for="EmployeeImageUrl" class="control-label"></label>
