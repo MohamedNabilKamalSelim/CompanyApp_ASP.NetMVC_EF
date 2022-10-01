@@ -32,10 +32,16 @@ namespace CompanyApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult SignUp(User model)
         {
-            dbContext.Users.Add(model);
-            dbContext.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                dbContext.Users.Add(model);
+                dbContext.SaveChanges();
 
-            return RedirectToAction("Login");
+                return RedirectToAction("Login");
+            }
+
+            TempData["logging"] = "yes";
+            return View();
         }
 
         public IActionResult Login()
@@ -48,15 +54,23 @@ namespace CompanyApp.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Login(string emailAdr, string pass)
         {
-            var user = dbContext.Users.FirstOrDefault(u => u.UserEmail == emailAdr && u.UserPassword == pass);
-            
-            if(user == null)
+            if (ModelState.IsValid)
             {
-                ViewBag.Massege = "Wrong Email or Password.";
-                return View();
+                var user = dbContext.Users.SingleOrDefault(u => u.UserEmail == emailAdr && u.UserPassword == pass);
+
+                if (user == null)
+                {
+                    ViewBag.Massege = "Wrong Email or Password.";
+
+                    TempData["logging"] = "yes";
+                    return View();
+                }
+
+                return RedirectToAction("Index");
             }
 
-            return RedirectToAction("Index");
+            TempData["logging"] = "yes";
+            return View();
         }
 
         public IActionResult Search()

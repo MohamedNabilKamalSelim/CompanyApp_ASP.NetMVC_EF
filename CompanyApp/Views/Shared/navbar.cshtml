@@ -1,4 +1,30 @@
-﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+﻿<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CompanyApp</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" asp-area="" asp-action="Index">Home</a>
+                <a class="nav-item nav-link" sp-area="" asp-action="Index" asp-controller="Employees">Employees</a>
+                <a class="nav-item nav-link" asp-area="" asp-action="Index" asp-controller="Departments">Departments</a>
+            </div>
+            <form class="d-flex" asp-action="Search">
+                <div class="input-group">
+                    <input type="text" name="term" class="form-control" placeholder="Search...">
+                </div>
+            </form>
+            <div class="nav-item btn btn-info">
+                <a class="dropdown-item" asp-action="Login" asp-controller="Home">Sign out</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+@*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
     <div class="container-fluid">
         <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CompanyApp</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -18,9 +44,13 @@
                 </li>
             </ul>
             <form class="d-flex" asp-action="Search">
-                <input class="form-control me-2" name="term" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-primary" type="submit">Search</button>
+                <div class="input-group">
+                    <input type="text" name="term" class="form-control" placeholder="Search...">
+                </div>
             </form>
+            <div class="nav-item btn btn-info">
+                <a class="dropdown-item" asp-action="Login" asp-controller="Home">Sign out</a>
+            </div>
         </div>
     </div>
-</nav>
+</nav>*@
